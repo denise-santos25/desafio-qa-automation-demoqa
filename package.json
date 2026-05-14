@@ -1,0 +1,23 @@
+{
+  "name": "desafio-qa-automation-demoqa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Solucao do desafio QA Automation usando Cypress, Cucumber e Page Objects.",
+  "scripts": {
+    "test": "cypress run",
+    "test:api": "cypress run --spec \"cypress/e2e/api/**/*.feature\"",
+    "test:frontend": "cypress run --spec \"cypress/e2e/frontend/**/*.feature\"",
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^13.17.0",
+    "esbuild": "^0.24.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/**/*.js"
+    ]
+  }
+}
