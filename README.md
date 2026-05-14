@@ -1,6 +1,6 @@
 # Desafio QA Automation - DemoQA
 
-Solucao do desafio proposto no arquivo `Desafio_QA (004).pptx`, usando:
+Solução do desafio proposto no arquivo `Desafio_QA (004).pptx`, usando:
 
 - JavaScript
 - Cypress
@@ -20,14 +20,14 @@ Fluxo coberto em `cypress/e2e/api/book_store.feature`:
 5. Reservar dois livros em `/BookStore/v1/Books`
 6. Consultar detalhes do usuario em `/Account/v1/User/{userID}`
 
-O usuario criado e removido ao final do teste.
+O usuário criado e removido ao final do teste.
 
 ### Parte 2 - Frontend
 
 Fluxos cobertos em `cypress/e2e/frontend`:
 
 - Practice Form: preenchimento completo, upload de `.txt`, submit, validacao e fechamento do popup
-- Browser Windows: clique em New Window e validacao da mensagem `This is a sample page`
+- Browser Windows: clique em New Window e validação da mensagem `This is a sample page`
 - Web Tables: criar, editar e deletar registro
 - Web Tables bonus: criar 12 registros dinamicos e deletar todos
 - Progress Bar: parar antes de 25%, validar valor e resetar ao chegar em 100%
@@ -81,5 +81,5 @@ cypress/
 ## Observacoes
 
 - O site DemoQA pode exibir anuncios e elementos fixos que interferem nos cliques; a suite injeta CSS para ocultar esses elementos durante os testes.
-- O fluxo de nova janela e validado por stub de `window.open`, abordagem recomendada para automacao com Cypress.
+- O fluxo de nova janela e validado por stub de `window.open`, abordagem recomendada para automação com Cypress.
 - Os dados sao gerados dinamicamente para evitar conflito entre execucoes.
